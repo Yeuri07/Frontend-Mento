@@ -168,6 +168,7 @@ body{
 }
 
 .section__texts{
+    color: var(--very-dark-cyan);
     margin-top: 50px;
     text-align: center;
 }
@@ -175,6 +176,7 @@ body{
 .subtitle{
     margin-bottom: 16px;
     font-family: var(--poppins);
+    color: var(--very-dark-cyan);
 }
 
 .question{
