@@ -23,7 +23,8 @@ body{
    
   display: flex;
   justify-content: center;
-  margin: 70px 0;
+  align-items: center;
+  height: 100%;
 }
 
 
@@ -31,7 +32,7 @@ body{
 .main__div{
    
     width: 85%;
-    height: 80%;
+   
     box-shadow: 0 0 15px rgba(0, 0, 0, .1);
     border-radius: 15px;
 }
