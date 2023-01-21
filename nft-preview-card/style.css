@@ -1,0 +1,112 @@
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-main: hsl(217, 54%, 11%); /*Main_bg*/
+    --very-dark-card: hsl(216, 50%, 16%);  /*Card_bg*/
+    --very-dark-line: hsl(215, 32%, 27%); /*line*/
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+  padding: 4em 1.2em;
+  background-color: var(--very-dark-main);
+  font-family: 'Outfit', sans-serif;
+}
+
+h1{
+    margin: 20px 0;
+}
+.paragrah p {
+    line-height: 1.7;
+    color: var(--soft-blue);
+}
+
+.section__card{
+    color: var(--white);
+    padding: 24px;
+    background-color: var(--very-dark-card);
+    border-radius: 10px;
+}
+
+#equilibrium-img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    cursor: pointer;
+}
+
+.figure__img{
+    
+    background-color: var(--cyan);
+    border-radius: 12px;
+    position: relative;
+   
+}
+
+.view{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 10;
+   display: none;
+
+}
+.box__date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--very-dark-line);
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+    padding: 2px 0;
+}
+
+.box{
+    display: flex;
+}
+
+.card__user{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+   
+}
+
+.card__user img{
+    
+    width: 2.1rem;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.card__date  p{
+    color: var(--soft-blue);
+}
+
+.card__price  p{
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+span{
+    color: var(--soft-blue);
+}
+
+#equilibrium-img:hover .view{
+    opacity: .6;
+    display: block;
+}
+
