@@ -20,6 +20,8 @@
     font-family: 'Inter', sans-serif;
     padding: 80px 20px;
     background-color: var(--very-dark-blue);
+  
+  
 }
 
 h1{
@@ -69,7 +71,7 @@ span{
 }
 .container{
   width: 90%;
-  max-width: 1200px;
+  max-width: 520px;
   margin: 0 auto;
   font-size: 15px;
   overflow: hidden;
@@ -100,14 +102,19 @@ span{
     height: 100vh;
     display: flex;
     align-items: center;
+    margin: 0;
+    
 
     }
     .main__box-mid{
         text-align: left;
         padding: 50px;
+        
     }
 
-
+    .container{
+        max-width: 1200px;
+    }
     .main__box{
       display: flex; 
       flex-direction: row-reverse; 
