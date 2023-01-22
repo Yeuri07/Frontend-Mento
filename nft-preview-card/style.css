@@ -17,6 +17,9 @@
   padding: 4em 1.2em;
   background-color: var(--very-dark-main);
   font-family: 'Outfit', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 h1{
@@ -32,6 +35,11 @@ h1{
     padding: 24px;
     background-color: var(--very-dark-card);
     border-radius: 10px;
+    max-width: 330px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 #equilibrium-img{
@@ -39,24 +47,29 @@ h1{
     border-radius: 8px;
     display: block;
     cursor: pointer;
+    position: relative;
+    opacity: 1;
+    
 }
 
-.figure__img{
-    
-    background-color: var(--cyan);
-    border-radius: 12px;
-    position: relative;
-   
+.figure__img {
+ position: relative; 
+ background-color: var(--cyan);
+ border-radius: 12px;
+
 }
+
+
 
 .view{
    position: absolute;
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
-   z-index: 10;
-   display: none;
-
+   /* display: none; */
+   visibility: hidden;
+  
+ 
 }
 .box__date{
     display: flex;
@@ -105,8 +118,23 @@ span{
     color: var(--soft-blue);
 }
 
-#equilibrium-img:hover .view{
-    opacity: .6;
-    display: block;
+#equilibrium-img:hover{
+   opacity: .6;
 }
 
+.figure__img:hover .view {
+    visibility: visible;
+   
+} 
+
+
+
+
+/*Desktop*/
+
+/* @media screen and (min-width: 1440px) {
+
+    .section__card{
+        max-width: 300px;
+    }
+} */
