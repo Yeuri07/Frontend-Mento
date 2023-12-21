@@ -66,10 +66,10 @@ body{
 }
 
 
-
 .form-text > input{
     padding: 10px;
     width: 100%;
+    min-width: 100px;
     font-weight: 700;
     font-size: 1.1rem;
     border-radius: 5px;
@@ -82,9 +82,11 @@ body{
     display: flex;
     align-items: center;
 }
+
 hr{
     opacity: 0.2;
 }
+
 .arrow-container-circle{
     display: flex;
     text-align: center;
@@ -92,10 +94,9 @@ hr{
     background-color: var(--Pupler);
     border-radius: 100vmax;
     border: none;
-   
-    
-
+    cursor: pointer;
 }
+
 .arrow-circle{
   padding: 16px;
   max-width: 60px;
@@ -109,11 +110,31 @@ hr{
 
 
 .result-text{
-    font-size: 4rem;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.2;
     font-weight: 900;
     font-style: italic;
 }
 
 span{
+    letter-spacing: 8px;
     color: var(--Pupler)
+}
+
+.arrow-container-circle:hover{
+    background-color: var(--Off-black);
+   
+}
+
+.form-text > input:hover{
+    border-color: var(--Pupler);
+    cursor: pointer;
+}
+
+ input:focus{
+    border-color: var(--Pupler);
+    
+    outline: 0 none;
 }
