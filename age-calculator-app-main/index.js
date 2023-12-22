@@ -1,4 +1,4 @@
-
+window.onload = function(){
 
 const year = document.querySelector('[year]');
 const month = document.querySelector('[month]');
@@ -113,3 +113,5 @@ form.addEventListener('submit', function(e){
 
 
 btn.addEventListener('click',onSubmit)
+
+}
