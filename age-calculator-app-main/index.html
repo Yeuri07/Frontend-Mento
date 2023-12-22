@@ -1,68 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:ital,wght@1,900&display=swap"
+      rel="stylesheet">
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <body>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:ital,wght@1,900&display=swap"
-    rel="stylesheet">
-  <title>Age calculator app</title>
-
-
-</head>
-
-<body>
-
-  <main class="main">
-
-    <div class="form">
-      
-      <section class="form-input">
-        <label class="form-text">day
-          <input day class="input" type="text " placeholder="DD">
-          <div class="error"></div>
-        </label>
-        
-        <label  class="form-text">month
-          <input month class="input" type="text" placeholder="MM" >
-          <div class="error"></div>
-        </label>
-        
-        <label class="form-text">year
-          <input year class="input" type="text" placeholder="YYYY">
-          <div class="error"></div>
-        </label>
-      </section>
- 
-      <section class="arrow">
-        <div class="arrow-container">
-          <hr>
+      <main class="main">
+    
+        <div class="form">
+          
+          <section class="form-input">
+            <label class="form-text">day
+              <input day class="input" type="text " placeholder="DD">
+              <div class="error"></div>
+            </label>
+            
+            <label  class="form-text">month
+              <input month class="input" type="text" placeholder="MM" >
+              <div class="error"></div>
+            </label>
+            
+            <label class="form-text">year
+              <input year class="input" type="text" placeholder="YYYY">
+              <div class="error"></div>
+            </label>
+          </section>
+     
+          <section class="arrow">
+            <div class="arrow-container">
+              <hr>
+            </div>
+            <button class="arrow-container-circle button-submit" >
+                <img class="arrow-circle" src="assets/images/icon-arrow.svg" alt="icon-arrow">
+            </button>
+          </section>
         </div>
-        <button class="arrow-container-circle button-submit" >
-            <img class="arrow-circle" src="assets/images/icon-arrow.svg" alt="icon-arrow">
-        </button>
-      </section>
-    </div>
-
-      <section class="result">
-        <div class="result-text"><span date>--</span>years</div>
-        <div class="result-text"><span date>--</span>months</div>
-        <div class="result-text"><span date>--</span>days</div>
-      </section>
-
-  </main>
-  <!-- <footer>
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </footer> -->
-
-  <script type="module" src="index.js"/>
+    
+          <section class="result">
+            <div class="result-text"><span date>--</span>years</div>
+            <div class="result-text"><span date>--</span>months</div>
+            <div class="result-text"><span date>--</span>days</div>
+          </section>
+    
+        </main>
   
-</body>
-
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>

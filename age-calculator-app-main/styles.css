@@ -1,32 +1,32 @@
 :root{
     --Pupler: hsl(259,100%,65%);
     --Light-red: hsl(0, 100%, 67%);
-
+  
     --White: hsl(0, 0%, 100%);
     --Off-white: hsl(0, 0%, 94%);
     --Light-grey: hsl(0, 0%, 86%);
     --Smokey-grey: hsl(0, 1%, 44%);
     --Off-black: hsl(0, 0%, 8%);
-
+  
     --font-size: 32px;
-}
-
-*{
+  }
+  
+  *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body{
+  }
+  
+  body{
     font-family: 'Outfit', sans-serif;
     background-color: var(--Off-white);
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-}
-
-.main{
+  }
+  
+  .main{
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -34,10 +34,10 @@ body{
     max-width: 600px;
     border-radius: 20px 20px 120px 20px;
     margin: 20px;
-} 
-
-
-.form-text{
+  } 
+  
+  
+  .form-text{
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
@@ -46,17 +46,17 @@ body{
     font-weight: 600;
     color: var(--Off-black);
     
-}
-
-.form-input{
+  }
+  
+  .form-input{
     display: flex;
     max-width: 70%;
     gap: 20px;
    
-}
-
-
-.form-text > input{
+  }
+  
+  
+  .form-text > input{
     padding: 10px;
     width: 100%;
     min-width: 100px;
@@ -64,22 +64,22 @@ body{
     font-size: 1.1rem;
     border-radius: 5px;
     margin-top: 10px;
-}
-
-.input{
+  }
+  
+  .input{
     border: 1px solid var(--Off-white);
-}
-
-.arrow{
+  }
+  
+  .arrow{
     display: flex;
     align-items: center;
-}
-
-hr{
+  }
+  
+  hr{
     opacity: 0.2;
-}
-
-.arrow-container-circle{
+  }
+  
+  .arrow-container-circle{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -87,51 +87,51 @@ hr{
     border-radius: 100vmax;
     border: none;
     cursor: pointer;
-}
-
-.arrow-circle{
+  }
+  
+  .arrow-circle{
   padding: 16px;
   max-width: 60px;
   text-align: center;
-}
-
-.arrow-container{
+  }
+  
+  .arrow-container{
    
     width: 100%; 
-}
-
-
-.result-text{
+  }
+  
+  
+  .result-text{
     display: flex;
     font-family: 'Poppins', sans-serif;
     font-size: 3.5rem;
     line-height: 1.2;
     font-weight: 900;
     font-style: italic;
-}
-
-span{
+  }
+  
+  span{
     letter-spacing: 8px;
     color: var(--Pupler)
-}
-
-.arrow-container-circle:hover{
+  }
+  
+  .arrow-container-circle:hover{
     background-color: var(--Off-black);
    
-}
-
-.form-text > input:hover{
+  }
+  
+  .form-text > input:hover{
     border-color: var(--Pupler);
     cursor: pointer;
-}
-input:focus{
+  }
+  input:focus{
     border-color: var(--Pupler);
     
     outline: 0 none;
-}
-
-
-.error{
+  }
+  
+  
+  .error{
     
     font-size: 10px;
     letter-spacing: 0;
@@ -139,10 +139,10 @@ input:focus{
     text-transform: none;
     font-weight: normal;
     min-height: 15px;
-}
-
-
-@media (max-width: 375px) {
+  }
+  
+  
+  @media (max-width: 375px) {
    
     .main{
         max-width: 375px;
@@ -169,20 +169,20 @@ input:focus{
         position: relative;
         margin: 40px 0;
     }
-
+  
     .result{
         margin-bottom: 20px;
         line-height: normal;
       
     }
-
+  
     .result-text{
         font-weight: 400;
         line-height: normal;
         font-size: 2.4rem;
         
     }
-
+  
     .button-submit{
         position: absolute;
         top: 50%;
