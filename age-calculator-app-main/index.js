@@ -2,7 +2,6 @@
 const year = document.querySelector('[year]');
 const month = document.querySelector('[month]');
 const day = document.querySelector('[day]')
-const form = document.querySelector('.form')
 const btn = document.querySelector('.button-submit')
 const error = document.querySelectorAll('.error')
 const labels = document.querySelectorAll('.form-text')
@@ -92,8 +91,8 @@ const result = () =>{
    span[2].textContent =  (fecha.getDate() - day.value)
 }
 
-function onSubmit (event){
-   event.preventDefault()
+function onSubmit (){
+  
    isDayCorrect();
    isMonthCorrect();
    isYearCorrect();
@@ -106,11 +105,6 @@ function onSubmit (event){
 
 }
 
-// form.addEventListener('submit', function(e){
-
-//    e.preventDefault()
-   
-// })
 
 
 btn.addEventListener('click',onSubmit)
