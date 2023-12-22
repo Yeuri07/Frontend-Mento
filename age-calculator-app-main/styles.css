@@ -17,17 +17,6 @@
     box-sizing: border-box;
 }
 
-/* The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px */
-
-/* ## Colors */
-
-
-
-
-
 body{
     font-family: 'Outfit', sans-serif;
     background-color: var(--Off-white);
@@ -44,8 +33,9 @@ body{
     background-color: var(--White);
     max-width: 600px;
     border-radius: 20px 20px 120px 20px;
-  
-}
+    margin: 20px;
+} 
+
 
 .form-text{
     display: flex;
@@ -73,11 +63,13 @@ body{
     font-weight: 700;
     font-size: 1.1rem;
     border-radius: 5px;
-    border: 1px solid var(--Off-white);
     margin-top: 10px;
-    
-   
 }
+
+.input{
+    border: 1px solid var(--Off-white);
+}
+
 .arrow{
     display: flex;
     align-items: center;
@@ -132,9 +124,69 @@ span{
     border-color: var(--Pupler);
     cursor: pointer;
 }
-
- input:focus{
+input:focus{
     border-color: var(--Pupler);
     
     outline: 0 none;
 }
+
+
+.error{
+    
+    font-size: 10px;
+    letter-spacing: 0;
+    font-style: italic;
+    text-transform: none;
+    font-weight: normal;
+    min-height: 15px;
+}
+
+
+@media (max-width: 375px) {
+   
+    .main{
+        max-width: 375px;
+        padding: 30px;
+        justify-content: center;
+       
+    }
+    .form-input{
+      
+        max-width: 100%;
+       
+    }
+    .form-text > input {
+    
+    min-width: 0;
+    padding: 15px;
+      
+    }
+    .form{
+        width: 100%;
+         margin-top: 20px;
+    }
+    .arrow{
+        position: relative;
+        margin: 40px 0;
+    }
+
+    .result{
+        margin-bottom: 20px;
+        line-height: normal;
+      
+    }
+
+    .result-text{
+        font-weight: 400;
+        line-height: normal;
+        font-size: 2.4rem;
+        
+    }
+
+    .button-submit{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+  }
