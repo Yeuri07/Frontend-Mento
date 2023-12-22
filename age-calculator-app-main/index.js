@@ -1,4 +1,3 @@
-window.onload = function(){
 
 const year = document.querySelector('[year]');
 const month = document.querySelector('[month]');
@@ -93,7 +92,8 @@ const result = () =>{
    span[2].textContent =  (fecha.getDate() - day.value)
 }
 
-function onSubmit (){
+function onSubmit (event){
+   event.preventDefault()
    isDayCorrect();
    isMonthCorrect();
    isYearCorrect();
@@ -106,12 +106,12 @@ function onSubmit (){
 
 }
 
-form.addEventListener('submit', function(e){
-   e.preventDefault()
+// form.addEventListener('submit', function(e){
+
+//    e.preventDefault()
    
-})
+// })
 
 
 btn.addEventListener('click',onSubmit)
 
-}
