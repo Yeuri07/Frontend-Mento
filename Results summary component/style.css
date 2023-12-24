@@ -70,7 +70,7 @@ h2{
  padding: 0;
 }
 
-h3 {
+.box-circle-h3 {
   color: white;
   font-size: 4rem;
   margin: 0;
@@ -91,6 +91,7 @@ p{
 
 .box-footer > p {
   text-align: center;
+  font-weight: normal;
   max-width: 220px;
   margin-bottom: 30px;
 }
@@ -148,6 +149,7 @@ span{
 --Orangey-yellow: hsl(39, 100%, 56%);
 --Green-teal: hsl(166, 100%, 37%);
 --Cobalt-blue: hsl(234, 85%, 45%); */
+
 .box1{
     background-color: hsla(0, 100%, 67%, 0.080);
     color: hsl(0, 100%, 67%);
