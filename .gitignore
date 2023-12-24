@@ -3,3 +3,4 @@ package-lock.json
 .DS_Store
 projects/**/.DS_Store
 projects/**/dist
+node_modules
