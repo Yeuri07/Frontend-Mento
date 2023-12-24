@@ -14,18 +14,13 @@
   --Persian-blue: hsla(241, 72%, 46%, 0);
 
 }
-@font-face {
-  font-family: 'MiFuente';
-  src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
- 
-}
 
 body{
   display: grid;
   place-content: center;
   min-height: 100vh;
   font-family: 'Hanken Grotesk', sans-serif;
-  
+ 
 }
 
 main{
@@ -36,8 +31,7 @@ main{
   min-width: 640px; 
   margin: auto;
   position: relative;
-  font-family: 'Hanken Grotesk';
-  
+
 }
 .box{
   display: flex;
@@ -52,7 +46,6 @@ main{
 
 h2{
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.3rem;
   margin: 40px;
   opacity: 0.6;
@@ -80,16 +73,14 @@ h2{
 h3 {
   color: white;
   font-size: 4rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
 }
 
 p{
   margin: 0;
   color: white;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-opacity: 0.6;
-font-weight: 600;
+  opacity: 0.6;
+  font-weight: 600;
 }
 
 .box-footer > h3 {
@@ -131,9 +122,15 @@ font-weight: 600;
   max-height: 50px;
   border-radius: 10px;
   align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 
   
+}
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:8px;
 }
 
 .card > p {
@@ -147,23 +144,26 @@ span{
   font-weight: 500;
 }
 
-
+/* --Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%); */
 .box1{
-    background-color: rgba(224, 18, 18, 0.144);
-    color: rgb(170, 68, 54);
+    background-color: hsla(0, 100%, 67%, 0.080);
+    color: hsl(0, 100%, 67%);
 }
 
 .box2{
-    background-color: rgba(241, 217, 0,0.199);
-    color: rgba(236, 175, 5, 0.836);
+    background-color: hsla(39, 100%, 56%, 0.107);
+    color: hsla(39, 100%, 56%, 0.814);
 }
 .box3{
-    background-color: rgba(115, 255, 0, 0.199);
-    color: rgba(24, 230, 6, 0.842);
+    background-color: hsla(166, 100%, 37%, 0.086);
+    color: hsla(166, 100%, 37%, 0.621);
 }
 .box4{
     background-color: rgba(148, 138, 138, 0.199);
-    color: rgba(45, 56, 160, 0.808);
+    color: hsla(234, 85%, 45%, 0.725);
 }
 
 
@@ -177,7 +177,9 @@ button{
   cursor: pointer;
 }
 
-
+button:hover{
+  background: linear-gradient(hsla(252, 100%, 67%, 0.902),hsl(252, 95%, 59%));  
+}
 
 @media (max-width: 670px) {
   main {
@@ -195,4 +197,5 @@ button{
   .second-box-div{
     margin: 20px;
   }
+
 }
